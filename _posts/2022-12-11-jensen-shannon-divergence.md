@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Jensen–Shannon Divergence
+title: Jensen Shannon Divergence
 category: tech
 ---
 
-<!-- 
+
 Jensen–Shannon divergence is a method of measuring the similarity between two probability distributions. It is also known as information radius (IRad). It is a smoothed variant of KL divergence, with some notable (and useful) differences.
 
 $$D_{\mathrm{JS}}(P,Q) := \frac 1 2 D_{\mathrm{KL}}(P\|M)+\frac 1 2 D_{\mathrm{KL}}(Q\|M)$$
@@ -58,6 +58,6 @@ $$
 $$
 
 
-Apply $Z=f(X)$, then by Data Processing Inequality:
+Apply $$Z=f(X)$$, then by Data Processing Inequality:
 
-$$D_{\mathrm{JS}}(f_\sharp P,f_\sharp Q) = I(B;Z) \leq I(B;X) = D_{\mathrm{JS}}(P,Q)$$ -->
+$$D_{\mathrm{JS}}(f_\sharp P,f_\sharp Q) = I(B;Z) \leq I(B;X) = D_{\mathrm{JS}}(P,Q)$$ 
