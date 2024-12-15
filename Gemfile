@@ -3,5 +3,9 @@
 source "https://rubygems.org"
 
 gem "kramdown-parser-gfm"
+gem 'webrick'
+gem 'bourbon'
+gem 'github-pages'
+gem 'jekyll-paginate'
 
 gemspec

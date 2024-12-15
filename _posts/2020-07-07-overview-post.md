@@ -39,13 +39,13 @@ Ordered:
 3. Nulla convallis id sapien ornare viverra.
 4. Nam a est eget ligula pellentesque posuere.
 
-## Blockquote(#blockquote)
+## [Blockquot](#blockquote)
 
 The following is a blockquote:
 
 > Suspendisse tempus dolor nec risus sodales posuere. Proin dui dui, mollis a consectetur molestie, lobortis vitae tellus.
 
-## Thematic breaks (<hr>)(#hr)
+## [Thematic breaks](#hr) (<hr>)
 
 Mauris viverra dictum ultricies[^3]. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. **You can put some text inside the horizontal rule like so.**
 
@@ -58,7 +58,7 @@ Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus 
 
 Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. Or you can just have an clean horizontal rule.
 
-## Code(#code)
+## [Code](#code)
 
 Now some code:
 
