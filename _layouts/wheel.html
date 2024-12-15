@@ -3,37 +3,53 @@
 <script src="https://unpkg.com/lucky-canvas@1.7.25"></script>
 <script>
     const myLucky = new LuckyCanvas.LuckyWheel('#my-lucky', {
-        width: '300px',
-        height: '300px',
-        blocks: [{ padding: '10px', background: '#617df2' }],
+        defaultStyle: {
+            fontSize: '18px',
+            fontColor: '#f3f3f2'
+        },
+        width: '400px',
+        height: '400px',
+        blocks: [
+          { padding: '3px', background: '#595857' },
+          { padding: '3px', background: '#f3f3f2' },
+          { padding: '3px', background: '#595857' }
+        ],
         prizes: [
-            { background: '#e9e8fe', fonts: [{ text: '0' }] },
-            { background: '#b8c5f2', fonts: [{ text: '1' }] },
-            { background: '#e9e8fe', fonts: [{ text: '2' }] },
-            { background: '#b8c5f2', fonts: [{ text: '3' }] },
-            { background: '#e9e8fe', fonts: [{ text: '4' }] },
-            { background: '#b8c5f2', fonts: [{ text: '5' }] },
+            {range:1,background: '#698aab', fonts: [{ top:'10px', text: '1' }] },
+            {range:1,background: '#9079ad', fonts: [{ top:'10px', text: '2' }] },
+            {range:1,background: '#6666CC', fonts: [{ top:'10px', text: '3' }] },
+            {range:1,background: '#745399', fonts: [{ top:'10px', text: '4' }] },
+            {range:1,background: '#ee827c', fonts: [{ top:'10px', text: '5' }] },
+            {range:1,background: '#d8a373', fonts: [{ top:'10px', text: '6' }] },
+
+
         ],
         defaultConfig: {
-            speed: 5,
+            speed: 15,
             stopRange: 0.7,
-            accelerationTime: 1500,
+            gutter: 2,
+            accelerationTime: 2500,
             decelerationTime: 3500
         },
-        buttons: [{
-            radius: '35%',
-            background: '#8a9bf3',
-            pointer: true,
-            fonts: [{ text: '开始', top: '-10px' }]
-        }],
+        buttons: [
+            { radius: '20%', background: '#c0c6c9 ' },
+            { radius: '16%', background: '#f3f3f2', pointer: true },
+            {
+                radius: '12%', background: '#c0c6c9 ',
+                fonts: [{ text: '开始', top: '-10px', fontSize: '18px', fontColor: '#2b2b2b' }]
+            },
+        ],
         start: function () {
             // 开始游戏
             myLucky.play()
             // 使用定时器模拟接口
-            setTimeout(() => {
+            setTimeout(_ => {
                 // 结束游戏
                 myLucky.stop()
-            }, 5000)
+            }, 2000)
+        },
+        end: function(prize) { // 游戏停止时触发
+            alert('不吃螺丝粉了，我们吃'+prize.fonts[0].text+'!')
         }
     })
 </script>
