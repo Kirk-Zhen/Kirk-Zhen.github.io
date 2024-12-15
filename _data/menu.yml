@@ -11,9 +11,9 @@
 entries:
   - title: intro
     entries:
-      - title: MLE@ByteDance, former SDE@Meituan, CS@UIUC
+      - title: MLE @ ByteDance, Ex SDE @ Meituan, Grad CS @ UIUC
 
-  - title: all posts
+  - title: some posts
     post_list:
       limit: 3
       show_more: true
@@ -29,7 +29,7 @@ entries:
 
   - title: 谈恋爱专栏
     entries:
-      - title: 一个给小何的选择困难症解决方案：<a href='https://kirk-zhen.github.io/wheel.html'> link </a>
+      - title: <a href='https://kirk-zhen.github.io/wheel.html'>一个给小何的选择困难症解决方案</a>
 
   # - title: posts by category
   #   post_list:
@@ -41,13 +41,15 @@ entries:
   # - title: rss
   #   url: feed.xml
   
-  - title: another list
-    entries:
-      - title: with subitems
-        entries:
-          - title: with subsubitems
-          - title: example page
-            url: about
+  # - title: another list
+  #   entries:
+  #     - title: with subitems
+  #       entries:
+  #         - title: with subsubitems
+  #         - title: example page
+  #           url: about
+  - title: about me
+    url: about_me 
   # - title: PRO TIP
   #   entries:
   #     - title: to edit this menu, edit _data/menu.yml file
