@@ -18,7 +18,7 @@ entries:
 
   - title: wheel
     post_list:
-      limit: 5
+      limit: 2
       show_more: true
       show_more_text: see wheel
       show_more_url: wheel.html
