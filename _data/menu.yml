@@ -16,6 +16,13 @@ entries:
       show_more_text: See archive...
       show_more_url: archive.html
 
+  - title: wheel
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: see wheel
+      show_more_url: wheel.html
+
   - title: posts by category
     post_list:
       category: example2
