@@ -14,6 +14,12 @@
             { background: '#e9e8fe', fonts: [{ text: '4' }] },
             { background: '#b8c5f2', fonts: [{ text: '5' }] },
         ],
+        defaultConfig: {
+            speed: 5,
+            stopRange: 0.7,
+            accelerationTime: 1500,
+            decelerationTime: 3500
+        },
         buttons: [{
             radius: '35%',
             background: '#8a9bf3',
@@ -26,8 +32,8 @@
             // 使用定时器模拟接口
             setTimeout(() => {
                 // 结束游戏
-                myLucky.stop(0)
-            }, 3000)
+                myLucky.stop()
+            }, 5000)
         }
     })
 </script>
