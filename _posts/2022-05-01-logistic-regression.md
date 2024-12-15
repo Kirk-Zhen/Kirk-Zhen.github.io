@@ -10,14 +10,14 @@ Given a set of data  $$\left\{\left(x_{i}, y_{i}\right)\right\}_{i=1}^{n}$$ if w
 
 The simple answer would be an indicator function:
 
-$$\ell(\hat{y}, y) = \I(\hat{y} \neq y) $$
+$$\ell(\hat{y}, y) = I(\hat{y} \neq y) $$
 
-Note: $$\I(\hat{y} \neq y)$$ return 1 if $$\hat{y} \neq y$$, otherwise return 0.
+Note: $$I(\hat{y} \neq y)$$ return 1 if $$\hat{y} \neq y$$, otherwise return 0.
 
 
 Measure the overall loss over the dataset, using binary classification error:
 
-$$\L=\frac{1}{ n} \sum_{i=1}^{n} \ell(\hat{y_i}, y_i) = \sum_{i=1}^{n} \I(\hat{y_i} \neq y_i)$$
+$$L=\frac{1}{ n} \sum_{i=1}^{n} \ell(\hat{y_i}, y_i) = \sum_{i=1}^{n} I(\hat{y_i} \neq y_i)$$
 
 But, we haven’t specified how to obtain the prediction. If the linear model is applied, ideally, our model should look like this:
 
@@ -38,7 +38,7 @@ $$
 
 The classification problem becomes the 0-1 loss minimization problem:
 
-$$\min _{w} \quad \sum_{i=1}^{n} \I( \text{sgn} (w\cdot x_i) \neq y_i)$$
+$$\min _{w} \quad \sum_{i=1}^{n} I( \text{sgn} (w\cdot x_i) \neq y_i)$$
 
 Pros:
 - Robust to outliers, even if a prediction is away from the decision boundary, the penalty is still 1
@@ -76,7 +76,7 @@ $$f(x) = \sigma(w\cdot x), \quad \sigma(t) = \frac {1} {1+e^{-t}}$$
 3. maximizing conditional log-likelihood function
     $$
     \begin{align*}
-    \L\left(w \mid\left\{\left(x_{i}, y_{i}\right)\right\}_{i=1}^{n}\right) 
+    L\left(w \mid\left\{\left(x_{i}, y_{i}\right)\right\}_{i=1}^{n}\right) 
     &:=\sum_{i=1}^{n} \log \operatorname{Pr}\left(Y=y_{i} \mid X=x_{i}, w\right) \\
     & =\sum_{i=1}^{n} y_{i} \log \sigma\left(w \cdot x_{i}\right)+\left(1-y_{i}\right) \log \sigma\left(-w \cdot x_{i}\right)
     \end{align*}

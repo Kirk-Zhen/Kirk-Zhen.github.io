@@ -1,7 +1,7 @@
 ---
 layout: post
 title: linear regression notes (advanced version)
-category: example
+category: tech
 ---
 
 Given a set of data 
@@ -26,7 +26,7 @@ is the inner product of two vectors
 
 Measure the overall loss over the dataset, using mean squared error (MSE):
 
-$$\mathcal{L}=\frac{1}{2 n} \sum_{i=1}^{n}\left(\hat{y}_{i}-y_{i}\right)^{2}$$
+$$L=\frac{1}{2 n} \sum_{i=1}^{n}\left(\hat{y}_{i}-y_{i}\right)^{2}$$
 
 In our case, our goal is to minimize the overall loss over the dataset, which means the objective is to minimize the MSE. Combine everything, we have:
 
@@ -43,12 +43,12 @@ We want to find the optimal model parameter $w$, and here are some observations:
 
 The objective function could be written as:
 
-$$\mathcal{L}(w):=\frac{1}{2 n} \sum_{i=1}^{n}\left(w \cdot x_{i}-y_{i}\right)^{2}=\frac{1}{2 n}\|X w-y\|_{2}^{2} $$
+$$L(w):=\frac{1}{2 n} \sum_{i=1}^{n}\left(w \cdot x_{i}-y_{i}\right)^{2}=\frac{1}{2 n}\|X w-y\|_{2}^{2} $$
 
 
 Further expand the objective function a bit, we get the quadratic form of the objective function:
 
-$$\mathcal{L}(w):= \frac{1}{2 n} w^{T}\left(X^{T} X\right) w-\frac{1}{n} y^{T} X w+\frac{1}{2 n} y^{T} y$$
+$$L(w):= \frac{1}{2 n} w^{T}\left(X^{T} X\right) w-\frac{1}{n} y^{T} X w+\frac{1}{2 n} y^{T} y$$
 
 
 Let's take a closer look at the leading quadratic term $$ w^{T}\left(X^{T} X\right) w $$.
@@ -63,10 +63,10 @@ The reason why we care about convexity, is because, for a differentiable convex 
 
 The gradient:
 
-$$\nabla \mathcal{L}(w)=\frac{1}{n}\left(X^T X\right) w-\frac{1}{n} X^T y$$
+$$\nabla L(w)=\frac{1}{n}\left(X^T X\right) w-\frac{1}{n} X^T y$$
 
 
-By setting $$\nabla \mathcal{L}(w)=0 $$, we obtain the normal equation:
+By setting $$\nabla L(w)=0 $$, we obtain the normal equation:
 
 $$\left(X^T X\right) w=X^T y$$
 
