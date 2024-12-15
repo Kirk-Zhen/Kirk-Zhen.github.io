@@ -29,7 +29,8 @@ entries:
 
   - title: 谈恋爱专栏
     entries:
-      - title: <a href='https://kirk-zhen.github.io/wheel.html'>一个给小何的选择困难症解决方案</a>
+      - title: 一个给小何的选择困难症解决方案
+        url: wheel
 
   # - title: posts by category
   #   post_list:
