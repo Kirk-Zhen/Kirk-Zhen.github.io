@@ -10,19 +10,23 @@
         width: '400px',
         height: '400px',
         blocks: [
-          { padding: '3px', background: '#595857' },
-          { padding: '3px', background: '#f3f3f2' },
-          { padding: '3px', background: '#595857' }
+            { padding: '3px', background: '#595857' },
+            { padding: '3px', background: '#f3f3f2' },
+            { padding: '3px', background: '#595857' }
         ],
         prizes: [
-            {range:1,background: '#698aab', fonts: [{ top:'10px', text: '1' }] },
-            {range:1,background: '#9079ad', fonts: [{ top:'10px', text: '2' }] },
-            {range:1,background: '#6666CC', fonts: [{ top:'10px', text: '3' }] },
-            {range:1,background: '#745399', fonts: [{ top:'10px', text: '4' }] },
-            {range:1,background: '#ee827c', fonts: [{ top:'10px', text: '5' }] },
-            {range:1,background: '#d8a373', fonts: [{ top:'10px', text: '6' }] },
-
-
+            { range: 1, background: '#698aab', fonts: [{ top: '10px', text: '麦当劳' }] },
+            { range: 1, background: '#9079ad', fonts: [{ top: '10px', text: '肯德基' }] },
+            { range: 1, background: '#6666CC', fonts: [{ top: '10px', text: '披萨' }] },
+            { range: 1, background: '#745399', fonts: [{ top: '10px', text: '日式盖饭' }] },
+            { range: 1, background: '#ee827c', fonts: [{ top: '10px', text: '炸鸡' }] },
+            { range: 1, background: '#d8a373', fonts: [{ top: '10px', text: '食堂' }] },
+            { range: 1, background: '#698aab', fonts: [{ top: '10px', text: '火锅' }] },
+            { range: 1, background: '#9079ad', fonts: [{ top: '10px', text: '肉夹馍' }] },
+            { range: 1, background: '#6666CC', fonts: [{ top: '10px', text: '烧烤' }] },
+            { range: 1, background: '#745399', fonts: [{ top: '10px', text: '轻食' }] },
+            { range: 1, background: '#ee827c', fonts: [{ top: '10px', text: '烤肉' }] },
+            { range: 1, background: '#d8a373', fonts: [{ top: '10px', text: '菠萝' }] },
         ],
         defaultConfig: {
             speed: 15,
@@ -48,8 +52,8 @@
                 myLucky.stop()
             }, 2000)
         },
-        end: function(prize) { // 游戏停止时触发
-            alert('不吃螺丝粉了，我们吃'+prize.fonts[0].text+'!')
+        end: function (prize) { // 游戏停止时触发
+            alert('不吃螺丝粉了，我们吃' + prize.fonts[0].text + '!')
         }
     })
 </script>
