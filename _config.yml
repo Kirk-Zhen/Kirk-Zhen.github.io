@@ -25,3 +25,5 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+mathjax: true  # enables support for mathjax - set to false to disable
