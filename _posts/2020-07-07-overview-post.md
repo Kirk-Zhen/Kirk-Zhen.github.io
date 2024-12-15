@@ -5,14 +5,24 @@ category: example
 
 Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacinia neque. Praesent nulla quam, ullamcorper in sollicitudin ac, molestie sed justo. Cras aliquam, sapien id consectetur accumsan, augue magna faucibus ex, ut ultricies turpis tortor vel ante. In at rutrum tellus.
 
+
+
+
 # Sample heading 1
 ## Sample heading 2
 ### Sample heading 3
 #### Sample heading 4
 ##### Sample heading 5
 ###### Sample heading 6
-
 Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod.
+
+## Table of contents
+- [Table of contents](#table-of-contents)
+- [Blockquote](#blockquote)
+- [Thematic breaks](#hr)
+- [Code](#code)
+
+
 
 ## Lists
 
@@ -29,13 +39,13 @@ Ordered:
 3. Nulla convallis id sapien ornare viverra.
 4. Nam a est eget ligula pellentesque posuere.
 
-## Blockquote
+## Blockquote(#blockquote)
 
 The following is a blockquote:
 
 > Suspendisse tempus dolor nec risus sodales posuere. Proin dui dui, mollis a consectetur molestie, lobortis vitae tellus.
 
-## Thematic breaks (<hr>)
+## Thematic breaks (<hr>)(#hr)
 
 Mauris viverra dictum ultricies[^3]. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. **You can put some text inside the horizontal rule like so.**
 
@@ -48,7 +58,7 @@ Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus 
 
 Mauris viverra dictum ultricies. Vestibulum quis ipsum euismod, facilisis metus sed, varius ipsum. Donec scelerisque lacus libero, eu dignissim sem venenatis at. Etiam id nisl ut lorem gravida euismod. Or you can just have an clean horizontal rule.
 
-## Code
+## Code(#code)
 
 Now some code:
 
